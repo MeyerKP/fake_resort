@@ -1,0 +1,66 @@
+body {
+  background: #F1E9DB;
+  font-family: 'calibri';
+  color: #000000;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 200px;
+}
+.flex-top-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#top-nav-bar {
+  background-color: #A39B8B;
+  height: 50px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+#top-left-hypers {
+  flex: 1;
+}
+#top-nav-button {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  background-color: #223127;
+  padding: 8px;
+  margin-left: 20px;
+}
+.top-nav-font {
+  color: white;
+  font-weight: bolder;
+  font-size: 16pt;
+  padding: 0 8px;
+}
+#top-right-hypers {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+#fb-img-link {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+#left-nav-bar {
+  display: flex;
+  background-color: #223127;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  flex-direction: column;
+  color: white;
+  font-weight: bolder;
+  font-size: 16pt;
+}
