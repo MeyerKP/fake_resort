@@ -70,7 +70,6 @@ a {
 .fb-img-link {
   height: 30px;
   width: 30px;
-  margin-right: 20px;
 }
 a.fb-img-link:hover img {
   display: none;
@@ -94,6 +93,10 @@ a.fb-img-link:hover::after {
   font-size: 16pt;
   box-shadow: inset 1px 1px 6px 6px rgba(0, 0, 0, .08);
   z-index: 1;
+}
+.large-logo {
+  height: 122px;
+  width: 138px;
 }
 .main-head {
   height: fit-content;
@@ -124,6 +127,7 @@ a.fb-img-link:hover::after {
   border-color: #223127;
   margin: 5px;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .main-body-art {
   height: 130px;
@@ -195,18 +199,51 @@ a.fb-img-link:hover::after {
           animation-delay: 16s;
 }
 @keyframes slideshow {
-  25% {
+  40% {
       opacity: 1;
   }
-  40% {
+  50% {
       opacity: 0;
   }
 }
 @-webkit-keyframes slideshow {
-  25% {
+  40% {
       opacity: 1;
   }
-  40% {
+  50% {
       opacity: 0;
   }
+}
+.home-footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 400px;
+}
+.home-footer-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-text {
+  text-align: center;
+  margin: 0;
+}
+.footer-text-bolder {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+.footer-text-smaller {
+  text-align: center;
+  font-size: 10pt;
+  margin: 0;
+}
+.footer-text-space {
+  content: "";
+  margin: 10px;
+}
+.home-footer-fb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
