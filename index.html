@@ -3,6 +3,7 @@
 <head>
   <title>WI Deer Huntin. Bag 'em and tag 'em!</title>
   <link rel="reset_stylesheet" href="css/reset_stylesheet.css">
+  <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -10,7 +11,7 @@
   <div class="container flex-top-nav">
     <div id="top-left-hypers">
       <a id="top-nav-button" target="_blank" href="availability.html"> Check Availability Now!</a>
-      <a class="top-nav-font href="tel:1234567890>(123) 456-7890</a>
+      <a class="top-nav-font" href="tel:1234567890">(123) 456-7890</a>
     </div>
     <div id="top-right-hypers">
       <a class="top-nav-font" target="_blank" href="fake_facebook_page.html"> Visit us on our Facebook page:
@@ -22,16 +23,29 @@
   </div>
 </header>
 <div id="left-nav-bar">
-  <img src="img/supersweet_small_logo.png">
-  <p>Home</p>
-  <p>Our History</p>
-  <p>Hunting</p>
-  <p>Cabin Rental</p>
-  <p>Nearby Lakes</p>
-  <p>Villages and Shops</p>
+  <img class="small-logo" src="img/supersweet_small_logo.png">
+  <div class="left-nav-buttons">
+    <div class="nav-button"><a href="index.html">Home</a></div>
+    <div class="nav-button"><a href="history_page.html">Our History</a></div>
+    <div id="nav-button-hunting"><p>Hunting</p><i class="fas fa-caret-right"></i>
+      <div id="hunting-pop-out">
+        <a href="Deer_Season.html">Deer Season</a>
+        <a href="Bear_Season.html">Bear Season</a>
+        <a href="Fowl_Hunting.html">Fowl Hunting</a>
+      </div>
+    </div>
+    <div id="nav-button-cabinrental"><p>Cabin Rental</p><i class="fas fa-caret-right"></i>
+      <div id="cabin-pop-out"></div>
+    </div>
+    <div id="nav-button-nearbylakes"><p>Nearby Lakes</p><i class="fas fa-caret-right"></i>
+      <div id="lakes-pop-out">
+      </div>
+    </div>
+    <div class="nav-button-last"><p>Villages and Shops</p></div>
+  </div>
 </div>
 <h2 class="container flex-centered flex-header">
-  <div>
+  <div> 
     <img src="img/supersweet_logo_resize.png">
   </div>
   <div>
@@ -94,12 +108,12 @@
   </div>
 </div>
 <div class="home-footer-content">
-  <img class="large-logo" src="img/supersweet_logo_resize.png">
+  <img class="large-logo-footer" src="img/supersweet_logo_resize.png">
   <div class="home-footer-text-container">
     <p class="footer-text-bolder">KEV'S NORTHWOODS RESORT</p>
     <p class="footer-text">N12345 In The Woods Rd.</p>
     <p class="footer-text">Up North, WI 98765</p>
-    <p class="footer-text-bolder">Call for reservations: (123) 456-7890</p>
+    <p class="footer-text-bolder">Call for reservations: <a class="standardfontlink" href="tel:1234567890">(123) 456-7890</a></p>
     <p class="footer-text-space"></p>
     <p class="footer-text-smaller">Copyright 2021 Kev's Northwoods Resort</p>
     <p class="footer-text-smaller">Up North, WI. All rights reserved.</p>

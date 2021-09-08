@@ -7,6 +7,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 .container {
   margin: 0 200px;
@@ -79,25 +80,104 @@ a.fb-img-link:hover::after {
 }
 #left-nav-bar {
   display: flex;
-  background-color: #223127;
-  width: 200px;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
   height: 100%;
   position: fixed;
   top: 50px;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-  flex-direction: column;
+  left: -320px;
+  transition: 0.5s;
+  background-color: #223127;
   color: white;
   font-weight: bolder;
   font-size: 16pt;
+  overflow-x: hidden;
+  padding-top: 20px;
   box-shadow: inset 1px 1px 6px 6px rgba(0, 0, 0, .08);
   z-index: 1;
 }
-.large-logo {
-  height: 122px;
-  width: 138px;
+#left-nav-bar:hover {
+  width: 200px;
+  left: 0px;
 }
+.small-logo {
+  height: 55px;
+  width: 111; 
+}
+.left-nav-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.nav-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #ffffff;
+  height: 60px;
+  width: 164px;
+}
+#nav-button-hunting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: solid 1px #ffffff;
+  height: 60px;
+  width: 164px;
+}
+#hunting-pop-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  background: #223127;
+  z-index: 1;
+  opacity: 0;
+}
+#nav-button-cabinrental {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: solid 1px #ffffff;
+  height: 60px;
+  width: 164px;
+}
+#cabin-pop-out {
+  opacity: 1;
+}
+#nav-button-nearbylakes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: solid 1px #ffffff;
+  height: 60px;
+  width: 164px;
+}
+#lakes-pop-out {
+  opacity: 1;
+}
+#nav-button-hunting i {
+  font-size: 12pt;
+}
+#nav-button-cabinrental i {
+  font-size: 12pt;
+}
+#nav-button-nearbylakes i {
+  font-size: 12pt;
+}
+.nav-button-last {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 164px;
+}
+
 .main-head {
   height: fit-content;
   width: auto;
@@ -187,16 +267,16 @@ a.fb-img-link:hover::after {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   opacity: 0;
-  -webkit-animation: slideshow 24s infinite;
-          animation: slideshow 24s infinite;
+  -webkit-animation: slideshow 18s infinite;
+          animation: slideshow 18s infinite;
 }
 .slideshow .slideshowimages:nth-child(2) img {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 .slideshow .slideshowimages:nth-child(1) img {
-  -webkit-animation-delay: 16s;
-          animation-delay: 16s;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 @keyframes slideshow {
   40% {
@@ -218,6 +298,10 @@ a.fb-img-link:hover::after {
   display: flex;
   justify-content: space-between;
   margin: 30px 400px;
+}
+.large-logo-footer {
+  height: 122px;
+  width: 138px;
 }
 .home-footer-text-container {
   display: flex;
