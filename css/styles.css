@@ -85,7 +85,7 @@ a.fb-img-link:hover img {
   display: none;
 }
 a.fb-img-link:hover::after {
-  content: url(file:///C:/repository/resort_page/img/FB_logo_link_hover.png);
+  content: url(img/FB_logo_link_hover.png);
 }
 #left-nav-bar {
   width: 350px;
